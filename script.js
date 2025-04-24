@@ -431,3 +431,10 @@ if (day == "monday") {
 //* Complete part 1
 
 console.log("End of a file");
+
+// Feature Sum
+function sum(x, y) {
+  return x + y;
+}
+
+sum(100, 200);

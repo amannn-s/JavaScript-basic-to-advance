@@ -382,7 +382,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 //* TEST DATA:
 //* Data Bonus 1: TEAM-A score 97, 112 and 101. TEAM-B score 109, 95 and 123
 //* Data Bonus 2: TEAM-A score 97, 112 and 101. TEAM-B score 109, 95 and 106
-*/
+
 /////////////////////////////////////////////////////
 //* The switch Statement
 const day = "sunday";
@@ -425,3 +425,9 @@ if (day == "monday") {
 } else {
   console.log("Not a valid day!!!");
 }
+
+*/
+/////////////////////////////////////////////////////
+//* Complete part 1
+
+console.log("End of a file");

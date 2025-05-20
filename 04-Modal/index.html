@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #333;
+        min-height: 100vh;
+        position: relative;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: linear-gradient(
+          to top left,
+          rgb(43, 43, 255),
+          rgb(229, 101, 255)
+        );
+      }
+
+      .show-modal {
+        font-family: 2rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        margin: 2rem 2rem;
+        border: none;
+        background-color: white;
+        color: #333;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .close-modal {
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+
+      .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 3rem;
+        border-radius: 8px;
+
+        z-index: 10;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 24px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        z-index: 5;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="show-modal">Show modal 1</button>
+    <button class="show-modal">Show modal 2</button>
+    <button class="show-modal">Show modal 3</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>This is modal window</h1>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi veniam
+        quia iste dignissimos eligendi voluptatem, voluptatum voluptatibus
+        aliquid. Perspiciatis, enim exercitationem reprehenderit odio maxime
+        repellendus ducimus aliquid! Eligendi, id. Voluptates nesciunt quis cum
+        tempore optio assumenda nihil iste nisi amet magnam consectetur libero
+        saepe veniam molestias, quae unde ipsam. Dolorem nostrum consectetur
+        unde adipisci fugiat modi veritatis ad animi debitis?
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
